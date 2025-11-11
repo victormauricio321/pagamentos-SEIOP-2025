@@ -15,12 +15,6 @@ uploaded_file = st.file_uploader("Arraste ou selecione um arquivo CSV", type=["c
 if uploaded_file is not None:
     # Leitura do CSV
     df = pd.read_csv(uploaded_file, encoding='latin1')
-    
-    #coluna_esquerda, coluna_direita = st.columns(2)
-
-    #with coluna_esquerda:
-        #st.subheader("Pré-visualização dos dados originais")
-        #st.dataframe(df.head())
 
     # ----------------------------------------------------------
     # Passo 2: EXEMPLO DE TRATAMENTO DE DADOS
